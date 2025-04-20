@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is HUNGHAHA website</h1>
+    <!--js-->
+    <!--alert = THÔNG BÁO-->
+    <script>
+        alert('HELLO, WELCOME TO HUNGHAHA') 
+        //let num = 20;
+        //-> Chắc chắn là kiểu number 
+        //let num1 = "10";
+        //-> Chắc chắn kiểu string
+        
+        //ép kiểu Number bằng Number(giá trị cần ép kiểu)
+        //let num2 = Number(num1)
+        // màu đen = string; màu xanh lá = number 
+
+        //let isNum = num + num2
+        
+        //console.log(isNum)
+
+        //let isString = "123xyz"
+        //let isString2 = "3.14abc"
+        //console.log(parseInt(isString)) //chỉ lấy giá trị số nguyên ở đầu, (trong trường hợp 12x3yz thì lấy 12)
+        //console.log(parseFloat(isString2)) //chỉ lấy giá trị số thực ở đầu
+
+        //Giá trị số lớn nhất có thể trong js ~1,79 x 10^108 
+        console.log(Number.MAX_VALUE);
+        console.log(Number.MIN_VALUE); // ~5 x 10^-324
+        console.log(Number.POSITIVE_INFINITY);
+        console.log(Number.NEGATIVE_INFINITY);
+        console.log(Number.NaN) //Not a number
+
+        //Kiểm tra xem có phải số hữu hạn không 
+        //console.log(Number.isFinite(10));
+        //console.log(Number.isFinite(Infinity))
+
+        //Kiểm tra xem có phải số nguyên không 
+        //console.log("Kiểm tra xem có phải số nguyên không")
+        //let isNumber = 10.5;
+        //let num2 = Number.isInteger(isNumber)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //console.log("chuyển đổi số")
+        //Number(value) chuyển đổi giá trị thành số 
+        //parseInt(string) chuyển đổi chuỗi thành số nguyên 
+        //parseFloat(string) chuyển đổi chuỗi thành số thực 
+
+        // console.log("làm tròn số")
+        // let a = 2.5;
+        // console.log(Math.round(a)); //làm tròn đến số nguyên gần nhất 
+        // console.log(Math.floor(a)); //làm tròn xuống 
+        // console.log(Math.ceil(2.1)); //Làm tròn lên 
+        // console.log(Math.trunc(2.345)); // Lấy phần nguyên của số  
+
+// CHUYỂN ĐỔI DỮ LIỆU TRONG JS 
+        console.log("type conversion -> kieu tuong minh");
+        let num = 111;
+        //numStr = String(num); //111  
+        //numStr = num.toString()  //111
+        // -> 2 option như nhau 
+
+    //*Note: Boolean là kiểu dữ liệu nguyên thủy "Primitive" chỉ có 2 giá trị TRUE/FLASE 
+    
+        // console.log(Boolean(1)); //true
+        // console.log(Boolean(0)); // false
+        // console.log(Boolean("")); //flase (chuỗi rỗng)
+        // console.log(Boolean(" ")); //true (chuỗi không rỗng)
+
+        // console.log("type coercion -> kieu ngam dinh");
+        // thứ tự trên -> dưỡi -> trái -> phải 
+        // trong phép (+), khi có string trong phép +, js sẽ chuyển số thành chuỗi 
+
+        // console.log("chuyen doi bang phep so sanh");
+        // a = "5";
+        // b = 5;
+        // if(a==b) {
+        //     console.log("bang nhau");
+        // }
+        // //== là ép kiểu rồi mới so sánh
+        // //=== là so sánh chặt chẽ hơn 
+
+        // //String 
+        // //String là dữ liệu nguyên thủy trong js, dùng để LƯU TRỮ chuỗi ký tự 
+        // //Chuỗi trong js KHÔNG THỂ THAY ĐỔI TRỰC TIẾP (phải tạo chuỗi mới) 
+
+        // let str = "Hello";
+
+        // str[0] = "h"; //không đổi 
+
+        // //Muốn thay đổi thì 
+        // str = "h" + str.slice(1) //slice(2) thì thành hllo  
+        // console.log(str);  //thành hello
+
+
+        // //Cách khai báo chuỗi 
+        // let nameStr = "hello"; //cách 1 "str"
+        // let nameStr2 = 'hello'; //cách 2 'str'
+        // let nameStr3 = `hello`; //backtick chèn biến/biểu thức 
+
+        // //=> BACKTICK 
+        // let name = "hưng";
+        // console.log(`lương tuấn $(name)`);
+        
+        // //Kiểm tra độ dài 
+        // let text1 = "Js is ez";
+        // console.log(text1);
+        // console.log(text1.length);
+
+        // //truy xuất dữ liệu 
+        // let text2 = "Js is ez"
+        // console.log(text2.charAt(5));
+        // console.log(text2[4]);
+
+        // //cắt chuỗi 
+        // let text = "Hunghaha is best"
+
+        // console.log(text.slice(0,6));
+        // console.log(text.substring(0,6));
+
+        
+        // //chuyển đổi chữ hoa -> chữ thường 
+        // let text = "Hunghaha";
+        // console.log(text.toUpperCase()); //-> viết hoa 
+        // console.log(text.toLowerCase()); //-> viết thường 
+
+        //kiểm tra chuỗi con 
+        text = "Hunghaha";
+        console.log(text.includes(ha)); 
+        console.log(text.startsWith(Hung));//kiểm tra xem chuỗi có bắt đầu từ (Hung) không 
+        console.log(text.endsWith(ha)); //kiểm tra xem chuỗi có kết thúc ở (ha) không 
+
+        
+        //Tìm vị trí index của chuỗi
+        console.log(text.indexOf("g")); //ìm vị trí đầu tiên 
+        console.log(text.lastIndexOf("g")); //tìm vị trí cuối cùng 
+
+        //Thay thế chuỗi 
+        console.log(text.replace("hung", "hai")); //vị trí đầu tiên 
+        console.log(text.replaceAll("h", "-")); //vị trí tất cả
+
+        //tách chuỗi 
+        text1 = "It's a wonderful life";
+        let textArr = text1.split(" ");
+        console.log(textArr);
+        console.log(textArr.slice(0,1));
+
+        //loại bỏ khoảng trắng 
+        text2 = "     Hello Hunghaha     ";
+        console.log(text2);
+        isSpace = text2.trim(); //xóa khoảng trắng 2 đầu 
+        console.log(isSpace);
+        isSpace2 = text2.trimStart(); //xóa khoảng trắng ở đầu 
+        isSpace3 = text2.trimEnd(); //xóa khoảng trống ở cuối 
+        console.log(isSpace3);
+
+    </script>
+
+
+    <!--NGUYÊN THỦY (PRIMITIVE) >< THAM CHIẾU (REFERENCE, Object, Array, Function)-->
+
+    <!--! khac
+        || hoac
+        && va 
+        -->
+</body>
+</html>
